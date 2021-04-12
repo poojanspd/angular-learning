@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Event } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,4 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  selectedTab:string;
+  onTabClick(event:string){
+  this.selectedTab=event;
+  }
 }
